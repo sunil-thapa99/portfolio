@@ -4,13 +4,16 @@
         <!-- meta charset -->
         <meta charset="utf-8">
         <!-- site title -->
-        <title>Phantom | Personal Resume Template</title>
+        <title>Sunil Thapa</title>
         <!-- meta description -->
         <meta name="description" content="">
         <!-- mobile viwport meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- fevicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
         
         <!-- ================================
         CSS Files
@@ -19,6 +22,7 @@
         <link rel="stylesheet" href="css/themefisher-fonts.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="chatbot/chatbot-ui.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dark.css">
         <link id="color-changer" rel="stylesheet" href="css/colors/yellow.css">
@@ -62,7 +66,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
                                 <div class="page-title text-center">
-                                    <h2>My <span class="primary">works</span> <span class="title-bg">works</span></h2>
+                                    <h2>Photo<span class="primary">Graphy</span> </h2>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                                 </div>
                             </div>                            
@@ -149,6 +153,18 @@
                 </div> <!-- /.pt-tablecell -->
             </div> <!-- /.pt-table -->
         </main> <!-- /.site-wrapper -->
+
+        <!-- Chat Bot -->
+        <div id="chat-container"></div>
+        <script src="chatbot/chatbot-ui.js"></script>
+
+        <script>
+            createChatBot(host = 'http://localhost:5005/webhooks/rest/webhook',
+                botLogo = "chatbot/imgs/bot-logo.png",
+                title = "UI BOT", welcomeMessage = "Hey, i am UI Bot, I am here to give you an example UI",
+                inactiveMsg = "This is inactive message, show casing that the server is down"
+            )
+        </script>
         
         <!-- ================================
         JavaScript Libraries

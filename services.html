@@ -4,13 +4,16 @@
         <!-- meta charset -->
         <meta charset="utf-8">
         <!-- site title -->
-        <title>Phantom | Personal Resume Template</title>
+        <title>Sunil Thapa</title>
         <!-- meta description -->
         <meta name="description" content="">
         <!-- mobile viwport meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- fevicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
         
         <!-- ================================
         CSS Files
@@ -19,6 +22,7 @@
         <link rel="stylesheet" href="css/themefisher-fonts.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="chatbot/chatbot-ui.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dark.css">
         <link id="color-changer" rel="stylesheet" href="css/colors/yellow.css">
@@ -166,6 +170,18 @@
                 </div> <!-- /.pt-tablecell -->
             </div> <!-- /.pt-table -->
         </section> <!-- /.site-wrapper -->
+
+        <!-- Chat Bot -->
+        <div id="chat-container"></div>
+        <script src="chatbot/chatbot-ui.js"></script>
+
+        <script>
+            createChatBot(host = 'http://localhost:5005/webhooks/rest/webhook',
+                botLogo = "chatbot/imgs/bot-logo.png",
+                title = "UI BOT", welcomeMessage = "Hey, i am UI Bot, I am here to give you an example UI",
+                inactiveMsg = "This is inactive message, show casing that the server is down"
+            )
+        </script>
         
         <!-- ================================
         JavaScript Libraries

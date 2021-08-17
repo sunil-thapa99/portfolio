@@ -4,13 +4,16 @@
         <!-- meta charset -->
         <meta charset="utf-8">
         <!-- site title -->
-        <title>Phantom | Personal Resume Template</title>
+        <title>Sunil Thapa</title>
         <!-- meta description -->
         <meta name="description" content="">
         <!-- mobile viwport meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- fevicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
         
         <!-- ================================
         CSS Files
@@ -19,6 +22,7 @@
         <link rel="stylesheet" href="css/themefisher-fonts.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="chatbot/chatbot-ui.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dark.css">
         <link id="color-changer" rel="stylesheet" href="css/colors/yellow.css">
@@ -59,16 +63,16 @@
                     <!-- /.close -->
 
                     <div class="author-image-large">
-                        <img src="img/author.png" alt="">
+                        <img src="img/my.jpg" alt="">
                     </div>
                     
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-md-6 col-lg-7">
                                 <div class="page-title">
-                                    <h2>David <span class="primary">ramon</span> <span class="title-bg">About</span></h2>
-                                    <p>A product designer from England, who focuses on interactive design & A freelance designer focusing on typography & clean interfaces. Also works in Google..</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repellendus corporis, tenetur inventore perferendis reprehenderit autem dignissimos non quos unde eveniet sapiente necessitatibus consequuntur ea ab dolore, minus nam eaque.</p>
+                                    <h2>Sunil <span class="primary">Thapa</span></h2>
+                                    <p class="text-justify" style="padding-right: 15px;">I am an aspiring computer vision engineer who enjoys connecting the dots: be it ideas from different disciplines, people from different teams, or applications from different industries. I have strong technical skills and an academic background in software engineering, statistics, and machine learning.</p>
+                                    <p class="text-justify" style="padding-right: 15px;">My passion lies in solving business problems with tailored data and algorithms and communicating complex ideas to non-technical stakeholders. I am able to jump across verticals to deliver high-performing AI solutions.</p>
                                 </div>
                             </div>
                         </div> <!-- /.row -->
@@ -89,6 +93,18 @@
                 </div> <!-- /.pt-tablecell -->
             </div> <!-- /.pt-table -->
         </main> <!-- /.site-wrapper -->
+
+        <!-- Chat Bot -->
+        <div id="chat-container"></div>
+        <script src="chatbot/chatbot-ui.js"></script>
+
+        <script>
+            createChatBot(host = 'http://localhost:5005/webhooks/rest/webhook',
+                botLogo = "chatbot/imgs/bot-logo.png",
+                title = "UI BOT", welcomeMessage = "Hey, i am UI Bot, I am here to give you an example UI",
+                inactiveMsg = "This is inactive message, show casing that the server is down"
+            )
+        </script>
         
         <!-- ================================
         JavaScript Libraries
